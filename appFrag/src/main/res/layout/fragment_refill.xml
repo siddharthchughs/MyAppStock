@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.machinecontroler.myroomapplication.RefillActivityFragment"
+    tools:showIn="@layout/activity_refill"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="531dp"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/clientusing_fragnances"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_margin="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+           android:paddingBottom="10dp"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter the fragnance name "
+                android:inputType="text"
+                android:id="@+id/add_frag_name"
+                />
+
+
+            <Button
+                android:id="@+id/SearchClient"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="5dp"
+                android:onClick="searchByName"
+                android:textColor="@drawable/searchtextchange"
+                android:text="@string/search"
+                android:background="@drawable/search_bg"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium.Inverse"
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            >
+
+            <TextView
+                android:id="@+id/dataClient"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="18sp"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/clientListSearch"
+                android:layout_below="@+id/dataClient"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressSearch"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

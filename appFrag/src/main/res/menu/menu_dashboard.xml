@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_create"
+        android:orderInCategory="100"
+        android:title="@string/add_panel"
+        app:showAsAction="collapseActionView" />
+
+
+    <item
+        android:id="@+id/action_find"
+        android:orderInCategory="101"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/add_find"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="102"
+        android:title="@string/userlogout"
+        app:showAsAction="collapseActionView" />
+
+    <!--<item-->
+        <!--android:id="@+id/adminPanel"-->
+        <!--android:orderInCategory="103"-->
+        <!--android:title="Panel"-->
+        <!--android:icon="@drawable/btn"-->
+        <!--app:showAsAction="always" />-->
+
+
+</menu>

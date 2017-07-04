@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.machinecontroler.myroomapplication.DetailActivity">
+
+    <item android:id="@+id/action_edit"
+        android:orderInCategory="101"
+        android:title="@string/editclient"
+        app:showAsAction="always"
+        />
+
+    <item
+
+        android:id="@+id/action_shareprovider"
+        android:title="Share"
+        android:icon="@drawable/ic_share_variant"
+        app:showAsAction="always"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider" />
+</menu>

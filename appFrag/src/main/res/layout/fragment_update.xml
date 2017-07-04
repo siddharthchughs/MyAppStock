@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.machinecontroler.myroomapplication.UpdateActivityFragment"
+    tools:showIn="@layout/activity_update">
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="531dp"
+        android:scrollbars="vertical"
+
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="5dp"-->
+                    <!--android:paddingBottom="5dp"-->
+                    <!--android:paddingEnd="10dp"-->
+                    <!--android:paddingRight="10dp"-->
+                    <!--android:paddingStart="5dp"-->
+                    <!--android:paddingTop="20dp"-->
+                    <!--android:text="Select Item"-->
+                    <!--android:textColor="@color/half_black"-->
+                    <!--android:textSize="16sp" />-->
+
+                <!--<Spinner-->
+                    <!--android:id="@+id/Itemtype"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                   <!--android:layout_weight="1"-->
+                    <!--android:layout_gravity="center"-->
+
+                    <!--android:layout_marginEnd="28dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+
+                   <!--/>-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:orientation="vertical"-->
+                <!--tools:layout_editor_absoluteX="0dp"-->
+                <!--tools:layout_editor_absoluteY="0dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:gravity="left"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="15dp"-->
+                        <!--android:paddingBottom="5dp"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:paddingRight="10dp"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:text="Selected"-->
+                        <!--android:textColor="@color/half_black"-->
+
+                        <!--android:textSize="16sp" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/typeSelected"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="15dp"-->
+                        <!--android:layout_marginBottom="12dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:paddingLeft="72dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textSize="18sp" />-->
+
+                <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="Update Stock as on"
+                        android:textColor="@color/half_black"
+
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/stockupdatedby"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+
+                        android:layout_marginBottom="12dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/selectDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/datestate_chnaged"
+                    android:text="Select Date"
+                    android:layout_marginStart="10dp"
+                    android:textSize="14sp"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium.Inverse"
+                    android:textColor="@drawable/textdatechanged" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|center_vertical"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Fragnance "
+                                android:textColor="@color/half_black"
+
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/fragnanceName"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="5dp"
+
+                                />
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:orientation="vertical"
+
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:gravity="start"
+                                    android:text="Quantity"
+                                    android:textColor="@color/half_black"
+
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="5dp"
+                                android:padding="5dp"
+                           android:gravity="center"
+                                android:orientation="horizontal"
+                                >
+                                <ImageView
+                                    android:id="@+id/quantity_Decrease"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:src="@drawable/ic_minus_circle_outline" />
+
+                                <TextView
+                                    android:id="@+id/quantityProduct"
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:textSize="15sp"
+                                    android:gravity="center"
+                                    android:textColor="@color/ColorPrimary"
+                                    />
+
+
+                                <ImageView
+                                    android:id="@+id/quantity_Increase"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_plus_circle_outline" />
+
+                            </LinearLayout>
+
+
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="10dp"
+                                android:text="Selected"
+                                android:textColor="@color/half_black"
+
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/fragnanceSelected"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="12dp"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="10dp"
+                                android:text="Quantity"
+                                android:textColor="@color/half_black"
+
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/fragnanceQuantity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="12dp"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="229dp"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            >
+
+                            <Button
+                                android:id="@+id/updateStock"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/updatestock"
+                                android:text="Submit"
+                                android:layout_centerHorizontal="true"
+                                android:textSize="15sp"
+
+
+
+
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium.Inverse"
+                                android:textColor="@color/white" />
+
+                            <ProgressBar
+                                android:id="@+id/progressBarUpdate"
+                                style="?android:attr/progressBarStyle"
+                              android:layout_below="@+id/updateStock"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+ />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        <!--</LinearLayout>-->
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

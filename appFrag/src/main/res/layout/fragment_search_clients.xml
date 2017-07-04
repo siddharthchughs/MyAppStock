@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.machinecontroler.myroomapplication.SearchClientsActivityFragment"
+    tools:showIn="@layout/activity_search_clients">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/dataClients"
+
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/to_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="8dp">
+
+                <EditText
+                    android:id="@+id/clientName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ClientName"
+
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/Send"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:textColor="@drawable/searchtextchange"
+                android:text="@string/search"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:background="@drawable/search_bg"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="0dp" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+
+
+            >
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/clientListSearch"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressSearch"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

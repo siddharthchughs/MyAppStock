@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:layout_marginTop="40dp"
+app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+<Button
+    android:id="@+id/btnChangeDate"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+    android:text="Change Date"
+    android:background="@drawable/datestate_chnaged"
+    android:paddingRight="5dp"
+    android:layout_marginLeft="10dp"
+
+    android:paddingLeft="5dp"
+
+
+
+
+    />
+
+<TextView
+    android:id="@+id/lblDate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingStart="5dp"
+    android:layout_marginStart="10dp"
+    android:text="Current Date (M-D-YYYY): "
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/tvDate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingStart="10dp"
+    android:layout_marginStart="10dp"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Ok"
+        android:paddingTop="10dp"
+        android:paddingStart="5dp"
+        android:layout_marginStart="15dp"
+        android:paddingBottom="10dp"
+
+        android:id="@+id/send"
+        android:background="@drawable/changed_ok_state"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        />
+    <!--<fragment-->
+        <!--android:id="@+id/fragment"-->
+        <!--android:name="com.machinecontroler.myroomapplication.DateSelectionActivityFragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+        <!--tools:layout="@layout/fragment_date_selection" />-->
+
+</LinearLayout>

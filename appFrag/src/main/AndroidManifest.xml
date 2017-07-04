@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.machinecontroler.myroomapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- <uses-permission -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/info_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/info_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SpashScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+            <intent-filter>
+                <data
+                    android:host="play.google.com/store"
+                    android:scheme="http" />
+
+                <data
+                    android:host="com.machinecontroler.myroomapplication"
+                    android:scheme="http" />
+                <data
+
+                    android:host="mail.google.com"
+                    android:scheme="http"
+                    />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".AdminActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+             <!--<intent-filter> -->
+             <!--<action android:name="android.intent.action.MAIN" /> -->
+
+
+             <!--<category android:name="android.intent.category.LAUNCHER" /> -->
+             <!--</intent-filter> -->
+
+        </activity>
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--<data-->
+                <!--android:host="com.machinecontroler.myroomapplication"-->
+                <!--android:scheme="http" />-->
+
+            <!--<action android:name="android.intent.action.VIEW" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--<category android:name="android.intent.category.BROWSABLE" />-->
+            <!--<data-->
+                <!--android:host="mail.google.com"-->
+                <!--android:scheme="http"-->
+                <!--/>-->
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_clients"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.ProvideStockActivity" />
+        </activity>
+        <activity
+            android:name=".AddClientsActivity"
+            android:label="@string/title_activity_add_clients"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DeletingActivity"
+            android:label="@string/title_activity_deleting"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PaymentDetailActivity"
+            android:label="@string/title_activity_payment_detail"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".ProvideStockActivity"
+            android:label="@string/title_activity_provide_stock"
+            android:parentActivityName=".DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".UpdateActivity"
+            android:label="@string/title_activity_update"
+            android:parentActivityName=".StockActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.StockActivity" />
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SupervisorsActivity"
+            android:label="@string/title_activity_supervisors"
+            android:parentActivityName=".ProvideStockActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.ProvideStockActivity" />
+        </activity>
+        <activity
+            android:name=".CreateActivity"
+            android:label="@string/title_activity_create"
+            android:parentActivityName=".DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".AddSupervisorActivity"
+            android:label="@string/title_activity_add_supervisor"
+            android:parentActivityName=".CreateActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.CreateActivity" />
+        </activity>
+        <activity
+            android:name=".RefillActivity"
+            android:label="@string/title_activity_refill"
+            android:parentActivityName=".ManagementSystem"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.ManagementSystem" />
+        </activity>
+        <activity
+            android:name=".StatusRequestActivity"
+            android:label="@string/title_activity_status_request"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".DateSelectionActivity"
+            android:label="@string/title_activity_date_selection"
+            android:parentActivityName=".StatusRequestActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.StatusRequestActivity" />
+        </activity>
+        <activity
+            android:name=".RefilldateSelectActivity"
+            android:label="@string/title_activity_refilldate_select"
+            android:parentActivityName=".ManagementSystem"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.ManagementSystem" />
+        </activity>
+        <activity
+            android:name=".ManagementSystem"
+            android:label="@string/title_activity_management_system"
+            android:parentActivityName=".DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".StockActivity"
+            android:label="@string/title_activity_stock"
+            android:parentActivityName=".DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".FragnanceActivity"
+            android:label="@string/title_activity_fragnance"
+            android:parentActivityName=".StockActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.StockActivity" />
+        </activity>
+        <activity
+            android:name=".LogoutActivity"
+            android:label="@string/title_activity_logout"
+            android:parentActivityName=".DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.DashboardActivity" />
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".AdminPanelActivity"
+            android:label="@string/title_activity_admin_panel"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name=".ClientRefillDateActivity"
+            android:label="@string/title_activity_date_selection"
+            android:parentActivityName=".AddClientsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.AddClientsActivity" />
+        </activity>
+        <activity
+            android:name=".DateSelectedForStockActivity"
+            android:label="@string/title_activity_date_selected_for_stock"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ClientEditActivity"
+            android:label="@string/title_activity_client_edit"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.DetailActivity" />
+        </activity>
+        <activity
+            android:name=".EditdateActivity"
+            android:label="@string/title_activity_editdate"
+            android:parentActivityName=".ClientEditActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.machinecontroler.myroomapplication.ClientEditActivity" />
+        </activity>
+        <activity
+            android:name=".SearchClientsActivity"
+            android:label="@string/title_activity_search_clients"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TabsActivity"
+            android:label="@string/title_activity_tabs"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".PanelActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".RefillMOnthActivity"
+            android:label="@string/title_activity_refill_month"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <!--<activity-->
+            <!--android:name=".MyGoogelSiginActivity"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:theme="@style/AppTheme.NoActionBar">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity
+            android:name=".GoogleSignActivity"
+            android:label="@string/title_activity_google_sign"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+
+        </activity>
+    </application>
+
+</manifest>

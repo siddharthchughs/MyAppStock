@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.machinecontroler.myroomapplication.MainActivity">
+
+
+
+
+    <!--<item android:id="@+id/searchClients"-->
+        <!--android:orderInCategory="102"-->
+        <!--android:title="@string/action_settings"-->
+        <!--app:showAsAction="ifRoom"-->
+        <!--android:icon="@drawable/ic_account_search"-->
+        <!--/>-->
+
+
+</menu>

@@ -1,0 +1,192 @@
+<resources>
+    <string name="app_name">Stock Warehouse</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="data">
+        <item>data1</item>
+        <item>data1</item>
+        <item>data1</item>
+        <item>data1</item>
+        <item>data1</item>
+        <item>data1</item>
+
+
+    </string-array>
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="status_signedin">Signed In</string>
+    <string name="status_notsignedin">Not Signed In</string>
+    <string name="status_notconnected">Not Connected</string>
+    <string name="status_nullresult">Null Result</string>
+    <string name="status_signincancelled">Sign In Cancelled</string>
+    <string name="editclient">Edit</string>
+    <string name="nothingtoupdate">Not Updated</string>
+    <string name="status_signinfail">Sign In Failed</string>
+    <string-array name="types_of_fragnance">
+        <item>Impression</item>
+        <item>Expression</item>
+        <item>Reflection</item>
+        <item>Motivation</item>
+        <item>Emotion</item>
+        <item>Fussion</item>
+        <item>Perception</item>
+        <item>Devotion</item>
+    </string-array>
+    <string-array name="month">
+        <item>January</item>
+        <item>Feburary</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>Novemeber</item>
+        <item>December</item>
+
+    </string-array>
+
+    <string-array name="type">
+        <item>Fragnance</item>
+        <item>Dispenser</item>
+
+    </string-array>
+    <string name="title_activity_clients">Clients</string>
+    <string name="title_activity_dashboard">Admin Dashboard</string>
+    <string name="title_activity_add_clients">Create Clients</string>
+    <string name="title_activity_update">Update Stock</string>
+    <string name="title_activity_deleting">Delete Clients</string>
+    <string name="title_activity_payment_detail">Payment Detail</string>
+    <string name="title_activity_provide_stock">Provide Stock</string>
+    <string name="add_panel">Create</string>
+    <string name="loading">Loading</string>
+    <string name="delete_all">Delete All</string>
+    <string name="delete_multiple">Delete Multiple</string>
+    <string name="title_activity_detail">Details</string>
+    <string name="title_activity_supervisors">Field Executives</string>
+    <string name="title_activity_create">Create Panel</string>
+    <string name="refillmanage">Refill Management</string>
+    <string name="title_activity_add_supervisor">Add Supervisor</string>
+    <string name="title_activity_refill">Refill Management</string>
+    <string name="search">Search</string>
+    <string name="add_find">Find</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="userlogout">Logout</string>
+    <string name="confirm">Logout </string>
+    <string name="notupdated">Nothing Updated</string>
+
+    <string name="areyousure">Are you sure you wanna logout !</string>
+    <string name="kindlyclose">Nothiing Updated !</string>
+    <string name="closingok">Close</string>
+  <string name="clientid">1046107935770</string>
+    <string name="selectDate">Selected Date</string>
+    <string name="updateStock">Update Stock</string>
+    <string name="list_client_by_date">To find the clients on the Adminstrator defined due date</string>
+    <string name="list_client_by_name">To find the clients on the Adminstrator defined name of fragnance.</string>
+
+    <string name="clientusing_fragnances">For acknowledgment of, About the clients using fragnance. .</string>
+    <string name="title_activity_status_request">Status Request</string>
+    <string name="title_activity_date_selection">Date Selection</string>
+    <string name="title_activity_refilldate_select">Refill Date Select</string>
+    <string name="title_activity_management_system">ManagementSystem</string>
+    <string name="title_activity_stock">MyStock</string>
+    <string name="title_activity_fragnance">List of Fragnances</string>
+
+    <string name="title_activity_spash">Spash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_post_requirement">PostRequirement</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_user_login">UserLogin</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="title_activity_logout">Logout</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_admin_panel">AdminPanelActivity</string>
+    <string name="title_activity_date_selected_for_stock">Date Select</string>
+    <string name="title_activity_client_edit">" Edit"</string>
+    <string name="title_activity_editdate">Edit Date</string>
+    <string name="title_activity_search_clients">Search your clients</string>
+    <string name="title_activity_tabs">Tabs</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_refill_month">RefillMOnthActivity</string>
+    <string name="title_activity_admin">"Admin "</string>
+    <string name="title_activity_google_sign">GoogleSign</string>
+</resources>
